@@ -1,5 +1,8 @@
-# w65c816sxb-hacker
-A tool for modifying the firmware on your WDC W65C816SXB Development Board
+# w65c02sxb-hacker
+A tool for modifying the firmware on your WDC W65C02SXB Development Board
+
+(c) by andrew jacobs (https://github.com/andrew-jacobs/w65c816sxb-hacker)
+modified by Collen for the W65c02SXB
 
 The SXB development board has a 128K Flash ROM that can be updated under
 software control. The design of the SXB board divides the ROM into four 32K
@@ -31,13 +34,13 @@ You also need a terminal program like AlphaCom or Tera Term on your PC that
 supports XMODEM file transfers. Configure it to work at 19200 baud, 8 data
 bits, no parity and 1 stop bit.
 
-## Using W65C816SXB-Hacker
+## Using W65C02SXB-Hacker
 
 Use the WDC debugger to download the hacking tool to the SXB board and start
 execution. The tool will respond with a message in the terminal software.
 
 ```
-W65C816SXB-Hacker [15.11]
+W65C02SXB-Hacker [15.11]
 .
 ```
 The 'M' command allows you to display memory, for example 'M FFE0 FFFF' will

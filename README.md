@@ -1,7 +1,7 @@
 # w65c02sxb-hacker
 A tool for modifying the firmware on your WDC W65C02SXB Development Board
 
-(c) by andrew jacobs (https://github.com/andrew-jacobs/w65c816sxb-hacker)
+(c) by andrew jacobs (https://github.com/andrew-jacobs/w65c816sxb-hacker)     
 modified by Collen for the W65c02SXB
 
 The SXB development board has a 128K Flash ROM that can be updated under

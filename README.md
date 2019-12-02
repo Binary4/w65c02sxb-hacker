@@ -1,5 +1,5 @@
 # w65c02sxb-hacker
-A tool for modifying the firmware on your WDC W65C02SXB Development Board
+A tool for modifying the firmware on your WDC W65C02SXB Development Board          
 (not working jet... !!, do not try to use it on the 02sxb)
 
 (c) by andrew jacobs (https://github.com/andrew-jacobs/w65c816sxb-hacker)     

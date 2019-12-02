@@ -5,7 +5,7 @@
 ;  ___) /  \| |_) |_____|  _  | (_| | (__|   <  __/ |
 ; |____/_/\_\____/      |_| |_|\__,_|\___|_|\_\___|_|
 ;
-; A program for Hacking your W65C265SXB or W65C816SXB
+; A program for Hacking your W65C265SXB or W65C816SXB or W65C02SXB
 ;-------------------------------------------------------------------------------
 ; Copyright (C),2015-2018 Andrew Jacobs
 ; All rights reserved.
@@ -27,13 +27,9 @@
                 pw      132
                 inclist on
 
-                chip    65816
+                chip    65C02
+                include "w65c02.inc"
 
-                ifdef   W65C265SXB
-                include "w65c265.inc"
-                else
-                include "w65c816.inc"
-                endif
 
 ;===============================================================================
 ;-------------------------------------------------------------------------------
@@ -1866,12 +1862,16 @@ MNEMONICS:
 ;-------------------------------------------------------------------------------
 
 TITLE           db      CR,LF
+				ifdef   W65C02SXB
+                db      "W65C02SXB"
+                endif
                 ifdef   W65C816SXB
                 db      "W65C816SXB"
                 endif
                 ifdef   W65C265SXB
                 db      "W65C265SXB"
                 endif
+
                 db      "-Hacker [18.06]",0
 
 ERROR           db      CR,LF,"Error - Type ? for help",0

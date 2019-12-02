@@ -2,13 +2,13 @@
 # WDC Tools Assembler Definitions
 #-------------------------------------------------------------------------------
 
-AS			=	wdc816as
+AS			=	wdc02as
 
 LD			=	wdcln
 
 RM			=	erase
 
-AS_FLAGS	=	-g -l -DW65C816SXB
+AS_FLAGS	=	-g -l -DW65C02SXB
 
 LD_FLAGS	=	-g -t -C0300
 
@@ -26,7 +26,7 @@ DEBUG		=	wdcdb.exe
 #-------------------------------------------------------------------------------
 
 OBJS	= \
-		w65c816sxb.obj \
+		w65c02sxb.obj \
 		sxb-hacker.obj
 
 all:	sxb-hacker.bin
@@ -46,11 +46,11 @@ debug:
 sxb-hacker.bin: $(OBJS)
 		$(LD) $(LD_FLAGS) -O $@ $(OBJS)
 
-w65c816sxb.obj: \
-		w65c816.inc \
-		w65c816sxb.inc \
-		w65c816sxb.asm
+w65c02sxb.obj: \
+		w65c02.inc \
+		w65c02sxb.inc \
+		w65c02sxb.asm
 
 sxb-hacker.obj: \
-		w65c816.inc \
+		w65c02.inc \
 		sxb-hacker.asm

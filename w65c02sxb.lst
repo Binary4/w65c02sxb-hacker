@@ -1,0 +1,18 @@
+92: ***ERROR - Instruction not allowed with selected processor.
+229: ***ERROR - Instruction not allowed with selected processor.
+254: ***ERROR - Instruction not allowed with selected processor.
+270: ***ERROR - Instruction not allowed with selected processor.
+292: ***ERROR - Instruction not allowed with selected processor.
+  Mon Dec  2 2019 22:04                                                                                                    Page 1
+
+
+                                               ***************************************
+                                               **      WDC 65C02 Macro Assembler    **
+                                               **                                   **
+                                               **     Version 3.49.1- Feb  6 2006    **
+                                               ***************************************
+
+
+
+      Lines assembled: 578
+      Errors: 5
